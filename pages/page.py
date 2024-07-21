@@ -37,5 +37,5 @@ class Page(BasePage):
 
         self.driver.find_element(*self.locator.MOBILE_INPUT).send_keys(config()['mobile'])
 
-        time.sleep(5)
+        time.sleep(8)
         self.driver.find_element(*self.locator.SUBMIT_BUTTON).click()
