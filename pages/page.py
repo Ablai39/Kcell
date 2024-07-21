@@ -1,6 +1,5 @@
 import os
 import shutil
-import time
 from pathlib import Path
 
 from selenium.common import WebDriverException
@@ -37,5 +36,5 @@ class Page(BasePage):
 
         self.driver.find_element(*self.locator.MOBILE_INPUT).send_keys(config()['mobile'])
 
-        time.sleep(8)
+        self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
         self.driver.find_element(*self.locator.SUBMIT_BUTTON).click()
