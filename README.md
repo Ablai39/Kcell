@@ -4,6 +4,10 @@
 формы, с использованием паттерна PageObject, в связке Python + Selenium webDrivet + Pytest +
 allure.
 
+P.S. Не успел сделать отчет. На текущем проекте реализовал отчетность посредством Telegram API:
+
+![image](https://github.com/Ablai39/comita/assets/64262682/31544489-792f-447c-980e-b07163688841)
+
 # Требования
 
 * Python 3.9.X
